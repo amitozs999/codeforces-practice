@@ -25,3 +25,19 @@ int main(){
     }
     cout<<i;
 }
+
+or
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    
+    int x,i=0;
+    cin>>x;
+ 
+    if(x%5==0){
+        cout<<x/5;
+    }else{
+        cout<<(x/5)+1;
+    }
+}
