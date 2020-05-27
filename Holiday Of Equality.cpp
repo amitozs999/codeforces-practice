@@ -2,21 +2,20 @@
 using namespace std;
 int main(){
     
-    long long int t,n,a,b;
-    cin>>t;
-    while(t--){
-        
-        cin>>n>>a>>b;
-        if(2*a<b){
-            
-            cout<<n*a<<endl;
-        }else{
-            
-            cout<<(n%2)*a+(n/2)*b<<endl;
-            
-        }
+    int n;
+    cin>>n;
+    int arr[n];
+    int m=INT_MIN;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+        m=max(m,arr[i]);
         
     }
     
-    
+    int sum=0;
+    for(int i=0;i<n;i++){
+        sum+=m-arr[i];
+     }
+     cout<<sum;
+      
 }

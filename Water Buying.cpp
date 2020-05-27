@@ -1,23 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int n,x,y,z;
-    int x0=0,y0=0,z0=0;
-    cin>>n;
-    for(int i=0;i<n;i++){
+    
+    long long int t,n,a,b;
+    cin>>t;
+    while(t--){
         
-        cin>>x>>y>>z;
-        x0+=x;
-        y0+=y;
-        z0+=z;
+        cin>>n>>a>>b;
+        if(2*a<b){
+            
+            cout<<n*a<<endl;
+        }else{
+            
+            cout<<(n%2)*a+(n/2)*b<<endl;
+            
+        }
         
     }
-    if(x0==0 && y0==0 && z0==0){
-        cout<<"YES";
-        
-    }
-    else{
-        cout<<"NO";
-    }
-}
+    
+    
 }
